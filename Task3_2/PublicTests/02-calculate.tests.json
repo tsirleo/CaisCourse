@@ -1,0 +1,13 @@
+[
+    {"step": 71, "type": "source", "taint": [ [140733691690548, 1] ], "comment": "a = 42" },
+    {"step": 71, "type": "sink", "comment": "a = 42" },
+    {"step": 74, "type": "sink", "comment": "b = a * 2" },
+    {"step": 75, "type": "sink", "comment": "c = 100" },
+    {"step": 87, "type": "sink", "comment": "d" },
+    {"step": 88, "type": "sink", "comment": "е" },
+    {"step": 105, "type": "sink", "comment": "e" },
+    {"step": 108, "type": "sink", "comment": "f" },
+    {"step": 128, "type": "sink", "comment": "h" },
+    {"step": 131, "type": "sink", "comment": "h" },
+    {"step": 137, "type": "sink", "comment": "printf" }
+]

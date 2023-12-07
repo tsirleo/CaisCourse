@@ -1,0 +1,4 @@
+[
+    {"step": 91, "type": "source", "taint": [ [ 140731943587344, 35 ] ], "comment": "taint password" },
+    {"step": 1585, "type": "sink", "comment": "fwrite" }
+]

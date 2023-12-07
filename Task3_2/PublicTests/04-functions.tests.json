@@ -1,0 +1,10 @@
+[
+    {"step": 73, "type": "source", "taint": [ [4196436, 2] ], "comment": "taint 12" },
+    {"step": 74, "type": "source", "taint": [ [4196464, 2] ], "comment": "taint 34" },
+    {"step": 75, "type": "source", "taint": [ [4196492, 2] ], "comment": "taint 56" },
+    {"step": 76, "type": "source", "taint": [ [4196520, 2] ], "comment": "taint 78" },
+    {"step": 77, "type": "source", "taint": [ [4196548, 2] ], "comment": "taint 90" },
+    {"step": 78, "type": "sink", "comment": "init" },
+    {"step": 375, "type": "sink", "comment": "after build" },
+    {"step": 602, "type": "sink", "comment": "after reverse" }
+]

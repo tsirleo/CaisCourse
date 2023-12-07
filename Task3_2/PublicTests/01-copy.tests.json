@@ -1,0 +1,11 @@
+[
+    {"step": 71, "type": "source", "taint": [ [140721559695000, 8] ], "comment": "a = 42" },
+    {"step": 71, "type": "sink", "comment": "a = 42" },
+    {"step": 73, "type": "sink", "comment": "b = a" },
+    {"step": 75, "type": "sink", "comment": "c = b" },
+    {"step": 76, "type": "sink", "comment": "a = 0" },
+    {"step": 77, "type": "sink", "comment": "al = 0" },
+    {"step": 78, "type": "source", "taint": ["ax"], "comment": "taint ax" },
+    {"step": 79, "type": "sink", "comment": "check rax" },
+    {"step": 84, "type": "sink", "comment": "printf" }
+]
