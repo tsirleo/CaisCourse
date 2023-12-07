@@ -1,0 +1,285 @@
+[0000000000400490] 31ED                             xor ebp, ebp
+[0000000000400492] 4989D1                           mov r9, rdx
+[0000000000400495] 5E                               pop rsi
+[0000000000400496] 4889E2                           mov rdx, rsp
+[0000000000400499] 4883E4F0                         and rsp, 0xfffffffffffffff0
+[000000000040049D] 50                               push rax
+[000000000040049E] 54                               push rsp
+[000000000040049F] 49C7C050064000                   mov r8, 0x400650
+[00000000004004A6] 48C7C1E0054000                   mov rcx, 0x4005e0
+[00000000004004AD] 48C7C750044000                   mov rdi, 0x400450
+[00000000004004B4] E867FFFFFF                       call 0x400420
+    ** Branch
+    -> [0000000000400420] = <__libc_start_main@plt>
+[00000000004005E0] 4157                             push r15
+[00000000004005E2] 4156                             push r14
+[00000000004005E4] 4189FF                           mov r15d, edi
+[00000000004005E7] 4155                             push r13
+[00000000004005E9] 4154                             push r12
+[00000000004005EB] 4C8D251E082000                   lea r12, ptr [rip+0x20081e]
+[00000000004005F2] 55                               push rbp
+[00000000004005F3] 488D2D1E082000                   lea rbp, ptr [rip+0x20081e]
+[00000000004005FA] 53                               push rbx
+[00000000004005FB] 4989F6                           mov r14, rsi
+[00000000004005FE] 4989D5                           mov r13, rdx
+[0000000000400601] 4C29E5                           sub rbp, r12
+[0000000000400604] 4883EC08                         sub rsp, 0x8
+[0000000000400608] 48C1FD03                         sar rbp, 0x3
+[000000000040060C] E8DFFDFFFF                       call 0x4003f0
+    ** Branch
+[00000000004003F0] 4883EC08                         sub rsp, 0x8
+[00000000004003F4] 488B05FD0B2000                   mov rax, qword ptr [rip+0x200bfd]
+[00000000004003FB] 4885C0                           test rax, rax
+[00000000004003FE] 7405                             jz 0x400405
+    ** Branch
+[0000000000400405] 4883C408                         add rsp, 0x8
+[0000000000400409] C3                               ret 
+    ** Branch
+[0000000000400611] 4885ED                           test rbp, rbp
+[0000000000400614] 7420                             jz 0x400636
+    ** Branch
+[0000000000400616] 31DB                             xor ebx, ebx
+[0000000000400618] 0F1F840000000000                 nop dword ptr [rax+rax*1], eax
+[0000000000400620] 4C89EA                           mov rdx, r13
+[0000000000400623] 4C89F6                           mov rsi, r14
+[0000000000400626] 4489FF                           mov edi, r15d
+[0000000000400629] 41FF14DC                         call qword ptr [r12+rbx*8]
+    ** Branch
+[0000000000400560] BF200E6000                       mov edi, 0x600e20
+[0000000000400565] 48833F00                         cmp qword ptr [rdi], 0x0
+[0000000000400569] 7505                             jnz 0x400570
+    ** Branch
+[000000000040056B] EB93                             jmp 0x400500
+    ** Branch
+[0000000000400500] BEA0106000                       mov esi, 0x6010a0
+[0000000000400505] 55                               push rbp
+[0000000000400506] 4881EEA0106000                   sub rsi, 0x6010a0
+[000000000040050D] 48C1FE03                         sar rsi, 0x3
+[0000000000400511] 4889E5                           mov rbp, rsp
+[0000000000400514] 4889F0                           mov rax, rsi
+[0000000000400517] 48C1E83F                         shr rax, 0x3f
+[000000000040051B] 4801C6                           add rsi, rax
+[000000000040051E] 48D1FE                           sar rsi, 0x1
+[0000000000400521] 7415                             jz 0x400538
+    ** Branch
+[0000000000400538] 5D                               pop rbp
+[0000000000400539] C3                               ret 
+    ** Branch
+[000000000040062D] 4883C301                         add rbx, 0x1
+[0000000000400631] 4839EB                           cmp rbx, rbp
+[0000000000400634] 75EA                             jnz 0x400620
+    ** Branch
+[0000000000400636] 4883C408                         add rsp, 0x8
+[000000000040063A] 5B                               pop rbx
+[000000000040063B] 5D                               pop rbp
+[000000000040063C] 415C                             pop r12
+[000000000040063E] 415D                             pop r13
+[0000000000400640] 415E                             pop r14
+[0000000000400642] 415F                             pop r15
+[0000000000400644] C3                               ret 
+    ** Branch
+[0000000000400450] 53                               push rbx
+[0000000000400451] BF01000000                       mov edi, 0x1
+[0000000000400456] BB60106000                       mov ebx, 0x601060
+[000000000040045B] 488B03                           mov rax, qword ptr [rbx]
+[000000000040045E] 4885C0                           test rax, rax
+[0000000000400461] 740A                             jz 0x40046d
+    ** Branch
+[0000000000400463] FFD0                             call rax
+    ** Branch
+[0000000000400586] 53                               push rbx
+[0000000000400587] 89FA                             mov edx, edi
+[0000000000400589] 89FB                             mov ebx, edi
+[000000000040058B] BE64064000                       mov esi, 0x400664
+[0000000000400590] BF01000000                       mov edi, 0x1
+[0000000000400595] 31C0                             xor eax, eax
+[0000000000400597] E894FEFFFF                       call 0x400430
+    ** Branch
+    -> [0000000000400430] = <__printf_chk@plt>
+[000000000040059C] 8D4301                           lea eax, ptr [rbx+0x1]
+[000000000040059F] 5B                               pop rbx
+[00000000004005A0] C3                               ret 
+    ** Branch
+[0000000000400465] 4883C308                         add rbx, 0x8
+[0000000000400469] 89C7                             mov edi, eax
+[000000000040046B] EBEE                             jmp 0x40045b
+    ** Branch
+[000000000040045B] 488B03                           mov rax, qword ptr [rbx]
+[000000000040045E] 4885C0                           test rax, rax
+[0000000000400461] 740A                             jz 0x40046d
+    ** Branch
+[0000000000400463] FFD0                             call rax
+    ** Branch
+[00000000004005A1] 53                               push rbx
+[00000000004005A2] 89FA                             mov edx, edi
+[00000000004005A4] 89FB                             mov ebx, edi
+[00000000004005A6] BE6A064000                       mov esi, 0x40066a
+[00000000004005AB] BF01000000                       mov edi, 0x1
+[00000000004005B0] 31C0                             xor eax, eax
+[00000000004005B2] E879FEFFFF                       call 0x400430
+    ** Branch
+    -> [0000000000400430] = <__printf_chk@plt>
+[00000000004005B7] 8D041B                           lea eax, ptr [rbx+rbx*1]
+[00000000004005BA] 5B                               pop rbx
+[00000000004005BB] C3                               ret 
+    ** Branch
+[0000000000400465] 4883C308                         add rbx, 0x8
+[0000000000400469] 89C7                             mov edi, eax
+[000000000040046B] EBEE                             jmp 0x40045b
+    ** Branch
+[000000000040045B] 488B03                           mov rax, qword ptr [rbx]
+[000000000040045E] 4885C0                           test rax, rax
+[0000000000400461] 740A                             jz 0x40046d
+    ** Branch
+[0000000000400463] FFD0                             call rax
+    ** Branch
+[0000000000400586] 53                               push rbx
+[0000000000400587] 89FA                             mov edx, edi
+[0000000000400589] 89FB                             mov ebx, edi
+[000000000040058B] BE64064000                       mov esi, 0x400664
+[0000000000400590] BF01000000                       mov edi, 0x1
+[0000000000400595] 31C0                             xor eax, eax
+[0000000000400597] E894FEFFFF                       call 0x400430
+    ** Branch
+    -> [0000000000400430] = <__printf_chk@plt>
+[000000000040059C] 8D4301                           lea eax, ptr [rbx+0x1]
+[000000000040059F] 5B                               pop rbx
+[00000000004005A0] C3                               ret 
+    ** Branch
+[0000000000400465] 4883C308                         add rbx, 0x8
+[0000000000400469] 89C7                             mov edi, eax
+[000000000040046B] EBEE                             jmp 0x40045b
+    ** Branch
+[000000000040045B] 488B03                           mov rax, qword ptr [rbx]
+[000000000040045E] 4885C0                           test rax, rax
+[0000000000400461] 740A                             jz 0x40046d
+    ** Branch
+[0000000000400463] FFD0                             call rax
+    ** Branch
+[00000000004005BC] 53                               push rbx
+[00000000004005BD] 89FA                             mov edx, edi
+[00000000004005BF] 89FB                             mov ebx, edi
+[00000000004005C1] BE70064000                       mov esi, 0x400670
+[00000000004005C6] BF01000000                       mov edi, 0x1
+[00000000004005CB] 31C0                             xor eax, eax
+[00000000004005CD] E85EFEFFFF                       call 0x400430
+    ** Branch
+    -> [0000000000400430] = <__printf_chk@plt>
+[00000000004005D2] 89D8                             mov eax, ebx
+[00000000004005D4] 0FAFC3                           imul eax, ebx
+[00000000004005D7] 5B                               pop rbx
+[00000000004005D8] C3                               ret 
+    ** Branch
+[0000000000400465] 4883C308                         add rbx, 0x8
+[0000000000400469] 89C7                             mov edi, eax
+[000000000040046B] EBEE                             jmp 0x40045b
+    ** Branch
+[000000000040045B] 488B03                           mov rax, qword ptr [rbx]
+[000000000040045E] 4885C0                           test rax, rax
+[0000000000400461] 740A                             jz 0x40046d
+    ** Branch
+[0000000000400463] FFD0                             call rax
+    ** Branch
+[00000000004005A1] 53                               push rbx
+[00000000004005A2] 89FA                             mov edx, edi
+[00000000004005A4] 89FB                             mov ebx, edi
+[00000000004005A6] BE6A064000                       mov esi, 0x40066a
+[00000000004005AB] BF01000000                       mov edi, 0x1
+[00000000004005B0] 31C0                             xor eax, eax
+[00000000004005B2] E879FEFFFF                       call 0x400430
+    ** Branch
+    -> [0000000000400430] = <__printf_chk@plt>
+[00000000004005B7] 8D041B                           lea eax, ptr [rbx+rbx*1]
+[00000000004005BA] 5B                               pop rbx
+[00000000004005BB] C3                               ret 
+    ** Branch
+[0000000000400465] 4883C308                         add rbx, 0x8
+[0000000000400469] 89C7                             mov edi, eax
+[000000000040046B] EBEE                             jmp 0x40045b
+    ** Branch
+[000000000040045B] 488B03                           mov rax, qword ptr [rbx]
+[000000000040045E] 4885C0                           test rax, rax
+[0000000000400461] 740A                             jz 0x40046d
+    ** Branch
+[0000000000400463] FFD0                             call rax
+    ** Branch
+[0000000000400586] 53                               push rbx
+[0000000000400587] 89FA                             mov edx, edi
+[0000000000400589] 89FB                             mov ebx, edi
+[000000000040058B] BE64064000                       mov esi, 0x400664
+[0000000000400590] BF01000000                       mov edi, 0x1
+[0000000000400595] 31C0                             xor eax, eax
+[0000000000400597] E894FEFFFF                       call 0x400430
+    ** Branch
+    -> [0000000000400430] = <__printf_chk@plt>
+[000000000040059C] 8D4301                           lea eax, ptr [rbx+0x1]
+[000000000040059F] 5B                               pop rbx
+[00000000004005A0] C3                               ret 
+    ** Branch
+[0000000000400465] 4883C308                         add rbx, 0x8
+[0000000000400469] 89C7                             mov edi, eax
+[000000000040046B] EBEE                             jmp 0x40045b
+    ** Branch
+[000000000040045B] 488B03                           mov rax, qword ptr [rbx]
+[000000000040045E] 4885C0                           test rax, rax
+[0000000000400461] 740A                             jz 0x40046d
+    ** Branch
+[0000000000400463] FFD0                             call rax
+    ** Branch
+[00000000004005BC] 53                               push rbx
+[00000000004005BD] 89FA                             mov edx, edi
+[00000000004005BF] 89FB                             mov ebx, edi
+[00000000004005C1] BE70064000                       mov esi, 0x400670
+[00000000004005C6] BF01000000                       mov edi, 0x1
+[00000000004005CB] 31C0                             xor eax, eax
+[00000000004005CD] E85EFEFFFF                       call 0x400430
+    ** Branch
+    -> [0000000000400430] = <__printf_chk@plt>
+[00000000004005D2] 89D8                             mov eax, ebx
+[00000000004005D4] 0FAFC3                           imul eax, ebx
+[00000000004005D7] 5B                               pop rbx
+[00000000004005D8] C3                               ret 
+    ** Branch
+[0000000000400465] 4883C308                         add rbx, 0x8
+[0000000000400469] 89C7                             mov edi, eax
+[000000000040046B] EBEE                             jmp 0x40045b
+    ** Branch
+[000000000040045B] 488B03                           mov rax, qword ptr [rbx]
+[000000000040045E] 4885C0                           test rax, rax
+[0000000000400461] 740A                             jz 0x40046d
+    ** Branch
+[000000000040046D] 89FA                             mov edx, edi
+[000000000040046F] BE76064000                       mov esi, 0x400676
+[0000000000400474] BF01000000                       mov edi, 0x1
+[0000000000400479] E8B2FFFFFF                       call 0x400430
+    ** Branch
+    -> [0000000000400430] = <__printf_chk@plt>
+[000000000040047E] 31C0                             xor eax, eax
+[0000000000400480] 5B                               pop rbx
+[0000000000400481] C3                               ret 
+    ** Branch
+[0000000000400540] 803D590B200000                   cmp byte ptr [rip+0x200b59], 0x0
+[0000000000400547] 7511                             jnz 0x40055a
+    ** Branch
+[0000000000400549] 55                               push rbp
+[000000000040054A] 4889E5                           mov rbp, rsp
+[000000000040054D] E86EFFFFFF                       call 0x4004c0
+    ** Branch
+[00000000004004C0] B8A7106000                       mov eax, 0x6010a7
+[00000000004004C5] 55                               push rbp
+[00000000004004C6] 482DA0106000                     sub rax, 0x6010a0
+[00000000004004CC] 4883F80E                         cmp rax, 0xe
+[00000000004004D0] 4889E5                           mov rbp, rsp
+[00000000004004D3] 761B                             jbe 0x4004f0
+    ** Branch
+[00000000004004F0] 5D                               pop rbp
+[00000000004004F1] C3                               ret 
+    ** Branch
+[0000000000400552] 5D                               pop rbp
+[0000000000400553] C605460B200001                   mov byte ptr [rip+0x200b46], 0x1
+[000000000040055A] F3C3                             ret 
+    ** Branch
+[0000000000400654] 4883EC08                         sub rsp, 0x8
+[0000000000400658] 4883C408                         add rsp, 0x8
+[000000000040065C] C3                               ret 
+    ** Branch

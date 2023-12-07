@@ -1,0 +1,905 @@
+[00000000004004F0] 31ED                             xor ebp, ebp
+[00000000004004F2] 4989D1                           mov r9, rdx
+[00000000004004F5] 5E                               pop rsi
+[00000000004004F6] 4889E2                           mov rdx, rsp
+[00000000004004F9] 4883E4F0                         and rsp, 0xfffffffffffffff0
+[00000000004004FD] 50                               push rax
+[00000000004004FE] 54                               push rsp
+[00000000004004FF] 49C7C0C0064000                   mov r8, 0x4006c0
+[0000000000400506] 48C7C150064000                   mov rcx, 0x400650
+[000000000040050D] 48C7C7A0044000                   mov rdi, 0x4004a0
+[0000000000400514] E857FFFFFF                       call 0x400470
+    ** Branch
+    -> [0000000000400470] = <__libc_start_main@plt>
+[0000000000400650] 4157                             push r15
+[0000000000400652] 4156                             push r14
+[0000000000400654] 4189FF                           mov r15d, edi
+[0000000000400657] 4155                             push r13
+[0000000000400659] 4154                             push r12
+[000000000040065B] 4C8D25AE072000                   lea r12, ptr [rip+0x2007ae]
+[0000000000400662] 55                               push rbp
+[0000000000400663] 488D2DAE072000                   lea rbp, ptr [rip+0x2007ae]
+[000000000040066A] 53                               push rbx
+[000000000040066B] 4989F6                           mov r14, rsi
+[000000000040066E] 4989D5                           mov r13, rdx
+[0000000000400671] 4C29E5                           sub rbp, r12
+[0000000000400674] 4883EC08                         sub rsp, 0x8
+[0000000000400678] 48C1FD03                         sar rbp, 0x3
+[000000000040067C] E8A7FDFFFF                       call 0x400428
+    ** Branch
+[0000000000400428] 4883EC08                         sub rsp, 0x8
+[000000000040042C] 488B05C50B2000                   mov rax, qword ptr [rip+0x200bc5]
+[0000000000400433] 4885C0                           test rax, rax
+[0000000000400436] 7405                             jz 0x40043d
+    ** Branch
+[000000000040043D] 4883C408                         add rsp, 0x8
+[0000000000400441] C3                               ret 
+    ** Branch
+[0000000000400681] 4885ED                           test rbp, rbp
+[0000000000400684] 7420                             jz 0x4006a6
+    ** Branch
+[0000000000400686] 31DB                             xor ebx, ebx
+[0000000000400688] 0F1F840000000000                 nop dword ptr [rax+rax*1], eax
+[0000000000400690] 4C89EA                           mov rdx, r13
+[0000000000400693] 4C89F6                           mov rsi, r14
+[0000000000400696] 4489FF                           mov edi, r15d
+[0000000000400699] 41FF14DC                         call qword ptr [r12+rbx*8]
+    ** Branch
+[00000000004005C0] BF200E6000                       mov edi, 0x600e20
+[00000000004005C5] 48833F00                         cmp qword ptr [rdi], 0x0
+[00000000004005C9] 7505                             jnz 0x4005d0
+    ** Branch
+[00000000004005CB] EB93                             jmp 0x400560
+    ** Branch
+[0000000000400560] BE78106000                       mov esi, 0x601078
+[0000000000400565] 55                               push rbp
+[0000000000400566] 4881EE78106000                   sub rsi, 0x601078
+[000000000040056D] 48C1FE03                         sar rsi, 0x3
+[0000000000400571] 4889E5                           mov rbp, rsp
+[0000000000400574] 4889F0                           mov rax, rsi
+[0000000000400577] 48C1E83F                         shr rax, 0x3f
+[000000000040057B] 4801C6                           add rsi, rax
+[000000000040057E] 48D1FE                           sar rsi, 0x1
+[0000000000400581] 7415                             jz 0x400598
+    ** Branch
+[0000000000400598] 5D                               pop rbp
+[0000000000400599] C3                               ret 
+    ** Branch
+[000000000040069D] 4883C301                         add rbx, 0x1
+[00000000004006A1] 4839EB                           cmp rbx, rbp
+[00000000004006A4] 75EA                             jnz 0x400690
+    ** Branch
+[00000000004006A6] 4883C408                         add rsp, 0x8
+[00000000004006AA] 5B                               pop rbx
+[00000000004006AB] 5D                               pop rbp
+[00000000004006AC] 415C                             pop r12
+[00000000004006AE] 415D                             pop r13
+[00000000004006B0] 415E                             pop r14
+[00000000004006B2] 415F                             pop r15
+[00000000004006B4] C3                               ret 
+    ** Branch
+[00000000004004A0] 50                               push rax
+[00000000004004A1] BE06000000                       mov esi, 0x6
+[00000000004004A6] BF60106000                       mov edi, 0x601060
+[00000000004004AB] E836010000                       call 0x4005e6
+    ** Branch
+[00000000004005E6] 31D2                             xor edx, edx
+[00000000004005E8] 4839F2                           cmp rdx, rsi
+[00000000004005EB] 7428                             jz 0x400615
+    ** Branch
+[00000000004005ED] 488D46FF                         lea rax, ptr [rsi-0x1]
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[0000000000400610] 48FFC2                           inc rdx
+[0000000000400613] EBD3                             jmp 0x4005e8
+    ** Branch
+[00000000004005E8] 4839F2                           cmp rdx, rsi
+[00000000004005EB] 7428                             jz 0x400615
+    ** Branch
+[00000000004005ED] 488D46FF                         lea rax, ptr [rsi-0x1]
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[0000000000400610] 48FFC2                           inc rdx
+[0000000000400613] EBD3                             jmp 0x4005e8
+    ** Branch
+[00000000004005E8] 4839F2                           cmp rdx, rsi
+[00000000004005EB] 7428                             jz 0x400615
+    ** Branch
+[00000000004005ED] 488D46FF                         lea rax, ptr [rsi-0x1]
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[0000000000400610] 48FFC2                           inc rdx
+[0000000000400613] EBD3                             jmp 0x4005e8
+    ** Branch
+[00000000004005E8] 4839F2                           cmp rdx, rsi
+[00000000004005EB] 7428                             jz 0x400615
+    ** Branch
+[00000000004005ED] 488D46FF                         lea rax, ptr [rsi-0x1]
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[0000000000400610] 48FFC2                           inc rdx
+[0000000000400613] EBD3                             jmp 0x4005e8
+    ** Branch
+[00000000004005E8] 4839F2                           cmp rdx, rsi
+[00000000004005EB] 7428                             jz 0x400615
+    ** Branch
+[00000000004005ED] 488D46FF                         lea rax, ptr [rsi-0x1]
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[0000000000400610] 48FFC2                           inc rdx
+[0000000000400613] EBD3                             jmp 0x4005e8
+    ** Branch
+[00000000004005E8] 4839F2                           cmp rdx, rsi
+[00000000004005EB] 7428                             jz 0x400615
+    ** Branch
+[00000000004005ED] 488D46FF                         lea rax, ptr [rsi-0x1]
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[0000000000400610] 48FFC2                           inc rdx
+[0000000000400613] EBD3                             jmp 0x4005e8
+    ** Branch
+[00000000004005E8] 4839F2                           cmp rdx, rsi
+[00000000004005EB] 7428                             jz 0x400615
+    ** Branch
+[0000000000400615] C3                               ret 
+    ** Branch
+[00000000004004B0] BE07000000                       mov esi, 0x7
+[00000000004004B5] BF40106000                       mov edi, 0x601040
+[00000000004004BA] E827010000                       call 0x4005e6
+    ** Branch
+[00000000004005E6] 31D2                             xor edx, edx
+[00000000004005E8] 4839F2                           cmp rdx, rsi
+[00000000004005EB] 7428                             jz 0x400615
+    ** Branch
+[00000000004005ED] 488D46FF                         lea rax, ptr [rsi-0x1]
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[0000000000400610] 48FFC2                           inc rdx
+[0000000000400613] EBD3                             jmp 0x4005e8
+    ** Branch
+[00000000004005E8] 4839F2                           cmp rdx, rsi
+[00000000004005EB] 7428                             jz 0x400615
+    ** Branch
+[00000000004005ED] 488D46FF                         lea rax, ptr [rsi-0x1]
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[0000000000400610] 48FFC2                           inc rdx
+[0000000000400613] EBD3                             jmp 0x4005e8
+    ** Branch
+[00000000004005E8] 4839F2                           cmp rdx, rsi
+[00000000004005EB] 7428                             jz 0x400615
+    ** Branch
+[00000000004005ED] 488D46FF                         lea rax, ptr [rsi-0x1]
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[0000000000400610] 48FFC2                           inc rdx
+[0000000000400613] EBD3                             jmp 0x4005e8
+    ** Branch
+[00000000004005E8] 4839F2                           cmp rdx, rsi
+[00000000004005EB] 7428                             jz 0x400615
+    ** Branch
+[00000000004005ED] 488D46FF                         lea rax, ptr [rsi-0x1]
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[0000000000400610] 48FFC2                           inc rdx
+[0000000000400613] EBD3                             jmp 0x4005e8
+    ** Branch
+[00000000004005E8] 4839F2                           cmp rdx, rsi
+[00000000004005EB] 7428                             jz 0x400615
+    ** Branch
+[00000000004005ED] 488D46FF                         lea rax, ptr [rsi-0x1]
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[0000000000400610] 48FFC2                           inc rdx
+[0000000000400613] EBD3                             jmp 0x4005e8
+    ** Branch
+[00000000004005E8] 4839F2                           cmp rdx, rsi
+[00000000004005EB] 7428                             jz 0x400615
+    ** Branch
+[00000000004005ED] 488D46FF                         lea rax, ptr [rsi-0x1]
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[00000000004005F6] 8B0C87                           mov ecx, dword ptr [rdi+rax*4]
+[00000000004005F9] 448B4487FC                       mov r8d, dword ptr [rdi+rax*4-0x4]
+[00000000004005FE] 4439C1                           cmp ecx, r8d
+[0000000000400601] 7D08                             jnl 0x40060b
+    ** Branch
+[0000000000400603] 44890487                         mov dword ptr [rdi+rax*4], r8d
+[0000000000400607] 894C87FC                         mov dword ptr [rdi+rax*4-0x4], ecx
+[000000000040060B] 48FFC8                           dec rax
+[000000000040060E] EBE1                             jmp 0x4005f1
+    ** Branch
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[0000000000400610] 48FFC2                           inc rdx
+[0000000000400613] EBD3                             jmp 0x4005e8
+    ** Branch
+[00000000004005E8] 4839F2                           cmp rdx, rsi
+[00000000004005EB] 7428                             jz 0x400615
+    ** Branch
+[00000000004005ED] 488D46FF                         lea rax, ptr [rsi-0x1]
+[00000000004005F1] 4839C2                           cmp rdx, rax
+[00000000004005F4] 741A                             jz 0x400610
+    ** Branch
+[0000000000400610] 48FFC2                           inc rdx
+[0000000000400613] EBD3                             jmp 0x4005e8
+    ** Branch
+[00000000004005E8] 4839F2                           cmp rdx, rsi
+[00000000004005EB] 7428                             jz 0x400615
+    ** Branch
+[0000000000400615] C3                               ret 
+    ** Branch
+[00000000004004BF] BE06000000                       mov esi, 0x6
+[00000000004004C4] BF60106000                       mov edi, 0x601060
+[00000000004004C9] E848010000                       call 0x400616
+    ** Branch
+[0000000000400616] 4154                             push r12
+[0000000000400618] 4989FC                           mov r12, rdi
+[000000000040061B] 55                               push rbp
+[000000000040061C] 4889F5                           mov rbp, rsi
+[000000000040061F] 53                               push rbx
+[0000000000400620] 31DB                             xor ebx, ebx
+[0000000000400622] 4839EB                           cmp rbx, rbp
+[0000000000400625] 741A                             jz 0x400641
+    ** Branch
+[0000000000400627] 418B149C                         mov edx, dword ptr [r12+rbx*4]
+[000000000040062B] BED4064000                       mov esi, 0x4006d4
+[0000000000400630] BF01000000                       mov edi, 0x1
+[0000000000400635] 31C0                             xor eax, eax
+[0000000000400637] 48FFC3                           inc rbx
+[000000000040063A] E841FEFFFF                       call 0x400480
+    ** Branch
+    -> [0000000000400480] = <__printf_chk@plt>
+[000000000040063F] EBE1                             jmp 0x400622
+    ** Branch
+[0000000000400622] 4839EB                           cmp rbx, rbp
+[0000000000400625] 741A                             jz 0x400641
+    ** Branch
+[0000000000400627] 418B149C                         mov edx, dword ptr [r12+rbx*4]
+[000000000040062B] BED4064000                       mov esi, 0x4006d4
+[0000000000400630] BF01000000                       mov edi, 0x1
+[0000000000400635] 31C0                             xor eax, eax
+[0000000000400637] 48FFC3                           inc rbx
+[000000000040063A] E841FEFFFF                       call 0x400480
+    ** Branch
+    -> [0000000000400480] = <__printf_chk@plt>
+[000000000040063F] EBE1                             jmp 0x400622
+    ** Branch
+[0000000000400622] 4839EB                           cmp rbx, rbp
+[0000000000400625] 741A                             jz 0x400641
+    ** Branch
+[0000000000400627] 418B149C                         mov edx, dword ptr [r12+rbx*4]
+[000000000040062B] BED4064000                       mov esi, 0x4006d4
+[0000000000400630] BF01000000                       mov edi, 0x1
+[0000000000400635] 31C0                             xor eax, eax
+[0000000000400637] 48FFC3                           inc rbx
+[000000000040063A] E841FEFFFF                       call 0x400480
+    ** Branch
+    -> [0000000000400480] = <__printf_chk@plt>
+[000000000040063F] EBE1                             jmp 0x400622
+    ** Branch
+[0000000000400622] 4839EB                           cmp rbx, rbp
+[0000000000400625] 741A                             jz 0x400641
+    ** Branch
+[0000000000400627] 418B149C                         mov edx, dword ptr [r12+rbx*4]
+[000000000040062B] BED4064000                       mov esi, 0x4006d4
+[0000000000400630] BF01000000                       mov edi, 0x1
+[0000000000400635] 31C0                             xor eax, eax
+[0000000000400637] 48FFC3                           inc rbx
+[000000000040063A] E841FEFFFF                       call 0x400480
+    ** Branch
+    -> [0000000000400480] = <__printf_chk@plt>
+[000000000040063F] EBE1                             jmp 0x400622
+    ** Branch
+[0000000000400622] 4839EB                           cmp rbx, rbp
+[0000000000400625] 741A                             jz 0x400641
+    ** Branch
+[0000000000400627] 418B149C                         mov edx, dword ptr [r12+rbx*4]
+[000000000040062B] BED4064000                       mov esi, 0x4006d4
+[0000000000400630] BF01000000                       mov edi, 0x1
+[0000000000400635] 31C0                             xor eax, eax
+[0000000000400637] 48FFC3                           inc rbx
+[000000000040063A] E841FEFFFF                       call 0x400480
+    ** Branch
+    -> [0000000000400480] = <__printf_chk@plt>
+[000000000040063F] EBE1                             jmp 0x400622
+    ** Branch
+[0000000000400622] 4839EB                           cmp rbx, rbp
+[0000000000400625] 741A                             jz 0x400641
+    ** Branch
+[0000000000400627] 418B149C                         mov edx, dword ptr [r12+rbx*4]
+[000000000040062B] BED4064000                       mov esi, 0x4006d4
+[0000000000400630] BF01000000                       mov edi, 0x1
+[0000000000400635] 31C0                             xor eax, eax
+[0000000000400637] 48FFC3                           inc rbx
+[000000000040063A] E841FEFFFF                       call 0x400480
+    ** Branch
+    -> [0000000000400480] = <__printf_chk@plt>
+[000000000040063F] EBE1                             jmp 0x400622
+    ** Branch
+[0000000000400622] 4839EB                           cmp rbx, rbp
+[0000000000400625] 741A                             jz 0x400641
+    ** Branch
+[0000000000400641] 5B                               pop rbx
+[0000000000400642] 5D                               pop rbp
+[0000000000400643] 415C                             pop r12
+[0000000000400645] BF0A000000                       mov edi, 0xa
+[000000000040064A] E911FEFFFF                       jmp 0x400460
+    ** Branch
+    -> [0000000000400460] = <putchar@plt>
+[00000000004004CE] BE07000000                       mov esi, 0x7
+[00000000004004D3] BF40106000                       mov edi, 0x601040
+[00000000004004D8] E839010000                       call 0x400616
+    ** Branch
+[0000000000400616] 4154                             push r12
+[0000000000400618] 4989FC                           mov r12, rdi
+[000000000040061B] 55                               push rbp
+[000000000040061C] 4889F5                           mov rbp, rsi
+[000000000040061F] 53                               push rbx
+[0000000000400620] 31DB                             xor ebx, ebx
+[0000000000400622] 4839EB                           cmp rbx, rbp
+[0000000000400625] 741A                             jz 0x400641
+    ** Branch
+[0000000000400627] 418B149C                         mov edx, dword ptr [r12+rbx*4]
+[000000000040062B] BED4064000                       mov esi, 0x4006d4
+[0000000000400630] BF01000000                       mov edi, 0x1
+[0000000000400635] 31C0                             xor eax, eax
+[0000000000400637] 48FFC3                           inc rbx
+[000000000040063A] E841FEFFFF                       call 0x400480
+    ** Branch
+    -> [0000000000400480] = <__printf_chk@plt>
+[000000000040063F] EBE1                             jmp 0x400622
+    ** Branch
+[0000000000400622] 4839EB                           cmp rbx, rbp
+[0000000000400625] 741A                             jz 0x400641
+    ** Branch
+[0000000000400627] 418B149C                         mov edx, dword ptr [r12+rbx*4]
+[000000000040062B] BED4064000                       mov esi, 0x4006d4
+[0000000000400630] BF01000000                       mov edi, 0x1
+[0000000000400635] 31C0                             xor eax, eax
+[0000000000400637] 48FFC3                           inc rbx
+[000000000040063A] E841FEFFFF                       call 0x400480
+    ** Branch
+    -> [0000000000400480] = <__printf_chk@plt>
+[000000000040063F] EBE1                             jmp 0x400622
+    ** Branch
+[0000000000400622] 4839EB                           cmp rbx, rbp
+[0000000000400625] 741A                             jz 0x400641
+    ** Branch
+[0000000000400627] 418B149C                         mov edx, dword ptr [r12+rbx*4]
+[000000000040062B] BED4064000                       mov esi, 0x4006d4
+[0000000000400630] BF01000000                       mov edi, 0x1
+[0000000000400635] 31C0                             xor eax, eax
+[0000000000400637] 48FFC3                           inc rbx
+[000000000040063A] E841FEFFFF                       call 0x400480
+    ** Branch
+    -> [0000000000400480] = <__printf_chk@plt>
+[000000000040063F] EBE1                             jmp 0x400622
+    ** Branch
+[0000000000400622] 4839EB                           cmp rbx, rbp
+[0000000000400625] 741A                             jz 0x400641
+    ** Branch
+[0000000000400627] 418B149C                         mov edx, dword ptr [r12+rbx*4]
+[000000000040062B] BED4064000                       mov esi, 0x4006d4
+[0000000000400630] BF01000000                       mov edi, 0x1
+[0000000000400635] 31C0                             xor eax, eax
+[0000000000400637] 48FFC3                           inc rbx
+[000000000040063A] E841FEFFFF                       call 0x400480
+    ** Branch
+    -> [0000000000400480] = <__printf_chk@plt>
+[000000000040063F] EBE1                             jmp 0x400622
+    ** Branch
+[0000000000400622] 4839EB                           cmp rbx, rbp
+[0000000000400625] 741A                             jz 0x400641
+    ** Branch
+[0000000000400627] 418B149C                         mov edx, dword ptr [r12+rbx*4]
+[000000000040062B] BED4064000                       mov esi, 0x4006d4
+[0000000000400630] BF01000000                       mov edi, 0x1
+[0000000000400635] 31C0                             xor eax, eax
+[0000000000400637] 48FFC3                           inc rbx
+[000000000040063A] E841FEFFFF                       call 0x400480
+    ** Branch
+    -> [0000000000400480] = <__printf_chk@plt>
+[000000000040063F] EBE1                             jmp 0x400622
+    ** Branch
+[0000000000400622] 4839EB                           cmp rbx, rbp
+[0000000000400625] 741A                             jz 0x400641
+    ** Branch
+[0000000000400627] 418B149C                         mov edx, dword ptr [r12+rbx*4]
+[000000000040062B] BED4064000                       mov esi, 0x4006d4
+[0000000000400630] BF01000000                       mov edi, 0x1
+[0000000000400635] 31C0                             xor eax, eax
+[0000000000400637] 48FFC3                           inc rbx
+[000000000040063A] E841FEFFFF                       call 0x400480
+    ** Branch
+    -> [0000000000400480] = <__printf_chk@plt>
+[000000000040063F] EBE1                             jmp 0x400622
+    ** Branch
+[0000000000400622] 4839EB                           cmp rbx, rbp
+[0000000000400625] 741A                             jz 0x400641
+    ** Branch
+[0000000000400627] 418B149C                         mov edx, dword ptr [r12+rbx*4]
+[000000000040062B] BED4064000                       mov esi, 0x4006d4
+[0000000000400630] BF01000000                       mov edi, 0x1
+[0000000000400635] 31C0                             xor eax, eax
+[0000000000400637] 48FFC3                           inc rbx
+[000000000040063A] E841FEFFFF                       call 0x400480
+    ** Branch
+    -> [0000000000400480] = <__printf_chk@plt>
+[000000000040063F] EBE1                             jmp 0x400622
+    ** Branch
+[0000000000400622] 4839EB                           cmp rbx, rbp
+[0000000000400625] 741A                             jz 0x400641
+    ** Branch
+[0000000000400641] 5B                               pop rbx
+[0000000000400642] 5D                               pop rbp
+[0000000000400643] 415C                             pop r12
+[0000000000400645] BF0A000000                       mov edi, 0xa
+[000000000040064A] E911FEFFFF                       jmp 0x400460
+    ** Branch
+    -> [0000000000400460] = <putchar@plt>
+[00000000004004DD] 31C0                             xor eax, eax
+[00000000004004DF] 5A                               pop rdx
+[00000000004004E0] C3                               ret 
+    ** Branch
+[00000000004005A0] 803DD10A200000                   cmp byte ptr [rip+0x200ad1], 0x0
+[00000000004005A7] 7511                             jnz 0x4005ba
+    ** Branch
+[00000000004005A9] 55                               push rbp
+[00000000004005AA] 4889E5                           mov rbp, rsp
+[00000000004005AD] E86EFFFFFF                       call 0x400520
+    ** Branch
+[0000000000400520] B87F106000                       mov eax, 0x60107f
+[0000000000400525] 55                               push rbp
+[0000000000400526] 482D78106000                     sub rax, 0x601078
+[000000000040052C] 4883F80E                         cmp rax, 0xe
+[0000000000400530] 4889E5                           mov rbp, rsp
+[0000000000400533] 761B                             jbe 0x400550
+    ** Branch
+[0000000000400550] 5D                               pop rbp
+[0000000000400551] C3                               ret 
+    ** Branch
+[00000000004005B2] 5D                               pop rbp
+[00000000004005B3] C605BE0A200001                   mov byte ptr [rip+0x200abe], 0x1
+[00000000004005BA] F3C3                             ret 
+    ** Branch
+[00000000004006C4] 4883EC08                         sub rsp, 0x8
+[00000000004006C8] 4883C408                         add rsp, 0x8
+[00000000004006CC] C3                               ret 
+    ** Branch
