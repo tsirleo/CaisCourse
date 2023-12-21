@@ -101,10 +101,10 @@ def unmark_memory_segment(memory_seg, memory_taints):
     deleted_indices = []
 
     for i in range(len(memory_taints)):
-        if memory_taints[i][0] <= memory_seg[0] <= memory_taints[i][0] + memory_taints[i][1] - 1:
+        if memory_taints[i][0] < memory_seg[0] < memory_taints[i][0] + memory_taints[i][1] - 1:
             start = i
 
-        if memory_taints[i][0] <= memory_seg[0] + memory_seg[1] - 1 < memory_taints[i][0] + memory_taints[i][1] - 1:
+        if memory_taints[i][0] < memory_seg[0] + memory_seg[1] - 1 < memory_taints[i][0] + memory_taints[i][1] - 1:
             end = i
 
         if memory_taints[i][0] >= memory_seg[0] and memory_taints[i][0] + memory_taints[i][1] - 1 <= memory_seg[0] + memory_seg[1] - 1:
